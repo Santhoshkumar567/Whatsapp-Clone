@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide the scrollbar for IE, Edge, and Firefox */
+  .custom-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+    /* Inside your styles.css (or any CSS file where you include Tailwind CSS) */
+@layer utilities {
+    /* You can add any other utility classes you need */
+    .custom-scrollbar {
+      /* Add any other Tailwind CSS utility classes you want for styling the container */
+      /* For example: bg-white, p-4, rounded-lg, etc. */
+      /* Remember to define the height and max-height to limit the container size and enable scrolling */
+      height: 550px;
+    }
+  }
+ 
+  
+  .chat_body {
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    height:32rem;
+    padding:10px;
+  }
+  
+  
+.b1{
+  text-transform: inherit !important;
+}
+.ts{
+  width:10px;
+}
